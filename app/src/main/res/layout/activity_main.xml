@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivFundo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/androidparty"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/happy_birthday_text"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvAssinatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signature_text"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvVelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAssoprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Assoprar vela" />
+    </LinearLayout>
+</FrameLayout>
